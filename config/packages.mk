@@ -99,6 +99,11 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/everest/overlay/common \
     vendor/everest/overlay/no-rro
 
+PRODUCT_PACKAGES += \
+    CustomPixelLauncherOverlay \
+    DocumentsUIOverlay \
+    NetworkStackOverlay
+
 # BatteryStatsViewer
 PRODUCT_PACKAGES += \
     BatteryStatsViewer
@@ -126,10 +131,6 @@ PRODUCT_PACKAGES += \
 # OmniJaws
 PRODUCT_PACKAGES += \
     OmniJaws
-
-# Dex preopt
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    NexusLauncherRelease
 
 # Launcher3
 TARGET_INCLUDE_PIXEL_LAUNCHER ?= true
