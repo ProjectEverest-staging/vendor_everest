@@ -133,6 +133,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/everest/overlay/rro_packages/partition_order.xml:$(TARGET_COPY_OUT_PRODUCT)/overlay/partition_order.xml
 
+# Vendor configurations
+$(call inherit-product, vendor/custom/config.mk)
+
 #Themes OVerlay
 include packages/overlays/Themes/themes.mk
 
